@@ -1,3 +1,5 @@
+/* ================= FONTS ================= */
+
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cinzel:wght@400..900&family=Hind:wght@300;400;500;600;700&family=Kalam:wght@300;400;700&family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @font-face {
@@ -7,8 +9,16 @@
   font-style: normal;
 }
 
+/* ================= BODY ================= */
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     background-color: #ff7722;
+    padding-bottom: 40px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -16,11 +26,67 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
+.container {
+    min-height: 100vh;
+    max-width: 1500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ff7722;
+}
+
+h1, p, li {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+p {
+    font-family: 'PT Serif';
+    font-weight: bold;
+}
+
+.hin-shlo {
+    font-family: 'Kalam';
+    font-size: 24px;
+    max-width: 1000px;
+    margin: 0 auto;  
+    text-align: center;
+    margin-top: 20px;
+}
+
+.img-desc {
+    font-family: 'Lora';
+    font-size: 13px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.image-pair {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 24px;
+    margin: 32px auto;
+    max-width: 1200px;
+}
+
+.image-pair img {
+    max-width: 48%;
+    height: auto;
+    display: block;
+}
+
 .hinglish-head {
     font-family: 'Samarkan';
     font-size: 60px;
     margin-bottom: 2px;
 }
+
+/* ================= HEADER ================= */
 
 .site-header {
     background-color: #f59e0b;
@@ -82,27 +148,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 32px;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-}
 
-.container {
-    min-height: 100vh;
-    max-width: 1500px;
-    margin: auto;
-    padding: 20px;
-    background-color: #ff7722;
-}
-
-h1, p, li {
-    text-align: center;
-}
-
-img {
-    display: block;
-    margin: 0 auto;
-}
+/* ================= TABLE ================= */
 
 .main-table {
     width: 90%;
@@ -112,7 +159,7 @@ img {
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 1);
     background-color: #e5e5e5;
-    border-collapse: collapse;
+    margin-top: 40px;
 }
 
 .main-table thead {
@@ -185,25 +232,44 @@ img {
     color: #1F2933;
 }
 
-p {
-    font-family: 'PT Serif';
-    font-weight: 'bold';
+/* ================= FOOTER ================= */
+
+.site-footer {
+    background-color: #f59e0b;
+    margin: 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
-.hin-shlo {
-    font-family: 'Kalam';
-    font-size: 24px;
+.footer-text {
+    text-align: center;
+    justify-self: center;
 }
 
-.img-desc {
-    font-family: 'Lora';
-    font-size: 13px;
-    font-weight: bold;
-    font-style: italic;
+.footer-spacer {
+    width: 48px;
 }
+
+.footer-text h1 {
+    margin: 0;
+    font-family: 'Hind', serif;
+    color: #3F3F46;
+    font-size: 40px;	
+}
+
+.footer-text p {
+    margin: 4px 0 0;
+    font-family: 'Cinzel', serif;
+    color: #3F3F46;
+    font-size: 20px;
+    max-width: 1400px;
+    margin-bottom: 40px;
+}
+
+/* ================= ANIMATION ================= */
 
 @media (prefers-reduced-motion: reduce) {
-    .jyotirlinga-table tbody tr {
+    .main-table tbody tr {
         opacity: 1;
         transform: none;
         animation: none;
